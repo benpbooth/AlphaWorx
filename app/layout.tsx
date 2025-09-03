@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AlphaWorx - AI Solutions',
-  description: 'AI Integration for Growing Businesses',
+  title: 'AlphaWorx - AI Business Automation Platform',
+  description: 'Streamline your business with intelligent AI automation. Scale faster, work smarter.',
 }
 
 export default function RootLayout({

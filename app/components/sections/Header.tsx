@@ -33,10 +33,13 @@ const Header: React.FC = () => {
                                       <div className="flex items-center space-x-2">
                      {/* Clean text-only SaaS logo */}
                      <div className="flex items-center relative group">
-                        <div className="flex items-baseline space-x-2">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                            <span className="text-white font-bold text-sm">A</span>
+                          </div>
                           <span
-                            className="text-2xl font-extrabold tracking-tight text-blue-600"
-                            style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.03em' }}
+                            className="text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                            style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.02em' }}
                           >
                             AlphaWorx
                           </span>

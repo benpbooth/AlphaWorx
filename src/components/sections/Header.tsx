@@ -31,9 +31,16 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-                               <div className="text-4xl text-black" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 825 }}>
-                     AlphaWorx
-                   </div>
+            <div className="relative group">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
+                  <span className="text-white font-bold text-lg">A</span>
+                </div>
+                <div className="text-3xl font-semibold text-gray-900 hover:text-blue-600 transition-colors" style={{ fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
+                  AlphaWorx
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Desktop Navigation */}

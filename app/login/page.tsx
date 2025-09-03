@@ -154,14 +154,19 @@ export default function LoginPage() {
             className="text-center mb-8"
           >
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
-              className="mb-4"
+              className="mb-6"
             >
-              <h1 className="text-3xl font-black tracking-tight text-gray-900" style={{ fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
-                AlphaWorx
-              </h1>
-              <p className="text-sm text-gray-500 font-medium">Analytics</p>
+              <div className="flex items-center justify-center space-x-3 mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-xl">A</span>
+                </div>
+                <h1 className="text-4xl font-semibold text-gray-900" style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.02em' }}>
+                  AlphaWorx
+                </h1>
+              </div>
+              <p className="text-sm text-gray-500 font-medium">AI-powered business automation</p>
             </motion.div>
           </motion.div>
 
