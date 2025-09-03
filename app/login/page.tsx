@@ -159,7 +159,7 @@ export default function LoginPage() {
               className="mb-4"
             >
               <h1 className="text-3xl font-black tracking-tight text-gray-900" style={{ fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
-                A3<span style={{ color: '#ff8a65' }}> Solutions</span>
+                AlphaWorx
               </h1>
               <p className="text-sm text-gray-500 font-medium">Analytics</p>
             </motion.div>

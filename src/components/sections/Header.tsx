@@ -32,7 +32,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
                                <div className="text-4xl text-black" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 825 }}>
-                     Peach<span className="text-orange-400">3</span>.AI
+                     AlphaWorx
                    </div>
           </div>
           

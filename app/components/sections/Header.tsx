@@ -38,13 +38,7 @@ const Header: React.FC = () => {
                             className="text-2xl font-extrabold tracking-tight text-blue-600"
                             style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.03em' }}
                           >
-                            A3
-                          </span>
-                          <span
-                            className="text-[12px] font-semibold uppercase tracking-[0.16em] text-gray-600"
-                            style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
-                          >
-                            Solutions
+                            AlphaWorx
                           </span>
                         </div>
                        </div>

@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Office</p>
-                    <p>123 Peachtree St, Atlanta, GA</p>
+                    <p>2620 Milford Lane<br/>Alpharetta, GA 30009</p>
                   </div>
                 </div>
               </div>

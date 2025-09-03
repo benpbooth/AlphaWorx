@@ -16,7 +16,7 @@ interface AIBusinessWebsiteProps {
 }
 
 const PeachtreeAI: React.FC<AIBusinessWebsiteProps> = ({
-      companyName = "A3 Solutions",
+      companyName = "AlphaWorx",
   ctaText = "Login"
 }) => {
   return (

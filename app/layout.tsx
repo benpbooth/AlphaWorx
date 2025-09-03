@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'A3 Solutions - AI Solutions',
+  title: 'AlphaWorx - AI Solutions',
   description: 'AI Integration for Growing Businesses',
 }
 
