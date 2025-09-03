@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-interface ContactProps {
-  companyName: string;
-}
-
-const Contact: React.FC<ContactProps> = ({ companyName }) => {
+const Contact: React.FC = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -58,7 +54,7 @@ const Contact: React.FC<ContactProps> = ({ companyName }) => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p>info@{companyName.toLowerCase()}</p>
+                    <p>info@alphaworxsystems.com</p>
                   </div>
                 </div>
                 
@@ -109,7 +105,7 @@ const Contact: React.FC<ContactProps> = ({ companyName }) => {
                       type="email" 
                       id="email" 
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring focus:ring-gray-200 focus:ring-opacity-50 transition-colors" 
-                      placeholder="your@email.com" 
+                      placeholder="your@alphaworxsystems.com" 
                       required 
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}

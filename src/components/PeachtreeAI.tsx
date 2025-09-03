@@ -25,7 +25,7 @@ const PeachtreeAI: React.FC<AIBusinessWebsiteProps> = ({
       <Hero ctaText={ctaText} />
       <Services />
       <About companyName={companyName} />
-      <Contact companyName={companyName} />
+      <Contact />
       <CTA />
       <Footer companyName={companyName} />
       

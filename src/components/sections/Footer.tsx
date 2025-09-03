@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ companyName }) => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400">info@{companyName.toLowerCase()}</li>
+              <li className="text-gray-400">info@alphaworxsystems.com</li>
               <li className="text-gray-400">+1 (555) 123-4567</li>
               <li className="text-gray-400">123 Peachtree St, Atlanta, GA</li>
             </ul>

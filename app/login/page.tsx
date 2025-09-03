@@ -348,8 +348,8 @@ export default function LoginPage() {
           >
             <p className="text-sm text-gray-500" style={{ fontFamily: 'Inter, sans-serif' }}>
               Need help? Contact us at{' '}
-                              <a href="mailto:support@a3solutions.ai" className="text-blue-600 hover:text-blue-800 transition-colors">
-                  support@a3solutions.ai
+                              <a href="mailto:info@alphaworxsystems.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+                  info@alphaworxsystems.com
               </a>
             </p>
           </motion.div>

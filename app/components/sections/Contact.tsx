@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      info: "benpaulboothgmail.com"
+      info: "info@alphaworxsystems.com"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -381,7 +381,7 @@ const Contact: React.FC = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-gray-900 bg-white"
                         style={{ fontFamily: 'Inter, sans-serif' }}
-                        placeholder="your@email.com"
+                        placeholder="your@alphaworxsystems.com"
                         required
                         whileFocus={{ scale: 1.02 }}
                         transition={{ duration: 0.2 }}
