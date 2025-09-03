@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface Message {
@@ -20,16 +20,16 @@ const LiveChatDemo: React.FC = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
 
-  const conversation: Message[] = [
-    { id: 1, text: "Hi! I need to schedule a dental cleaning.", sender: 'customer', delay: 1000 },
-    { id: 2, text: "I'd be happy to help you schedule that! When would work best for you?", sender: 'ai', delay: 1800 },
-    { id: 3, text: "Do you have anything available next week?", sender: 'customer', delay: 1200 },
-    { id: 4, text: "Yes! I have Tuesday at 2pm or Thursday at 10am available. Which works better?", sender: 'ai', delay: 2000 },
-    { id: 5, text: "Tuesday at 2pm sounds perfect!", sender: 'customer', delay: 1000 },
-    { id: 6, text: "Great! I'll book you for Tuesday, March 12th at 2:00pm with Dr. Smith. Can I get your name and phone number?", sender: 'ai', delay: 2200 },
-    { id: 7, text: "Sure! It's Sarah Johnson, 555-0123", sender: 'customer', delay: 1300 },
-    { id: 8, text: "Perfect! You're all set, Sarah. I'll send you a confirmation text. See you Tuesday at 2pm! 😊", sender: 'ai', delay: 2000 }
-  ];
+  const conversation = useMemo((): Message[] => [
+    { id: 1, text: "Hi! I need to schedule a dental cleaning.", sender: 'customer' as const, delay: 1000 },
+    { id: 2, text: "I'd be happy to help you schedule that! When would work best for you?", sender: 'ai' as const, delay: 1800 },
+    { id: 3, text: "Do you have anything available next week?", sender: 'customer' as const, delay: 1200 },
+    { id: 4, text: "Yes! I have Tuesday at 2pm or Thursday at 10am available. Which works better?", sender: 'ai' as const, delay: 2000 },
+    { id: 5, text: "Tuesday at 2pm sounds perfect!", sender: 'customer' as const, delay: 1000 },
+    { id: 6, text: "Great! I'll book you for Tuesday, March 12th at 2:00pm with Dr. Smith. Can I get your name and phone number?", sender: 'ai' as const, delay: 2200 },
+    { id: 7, text: "Sure! It's Sarah Johnson, 555-0123", sender: 'customer' as const, delay: 1300 },
+    { id: 8, text: "Perfect! You're all set, Sarah. I'll send you a confirmation text. See you Tuesday at 2pm! 😊", sender: 'ai' as const, delay: 2000 }
+  ], []);
 
   // Smooth scroll to bottom function
   const scrollToBottom = () => {
@@ -92,7 +92,7 @@ const LiveChatDemo: React.FC = () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [currentMessageIndex, conversation.length]);
+  }, [currentMessageIndex, conversation]);
 
   // Scroll to bottom when typing starts or when typing text updates
   useEffect(() => {

@@ -20,7 +20,6 @@ export interface ChatbotProps {
 const Chatbot: React.FC<ChatbotProps> = ({
   webhookUrl = 'https://benpbooth.app.n8n.cloud/webhook/d55958cb-535a-4200-82da-e4c87aa9c77e/chat',
   primaryColor = '#2563eb',
-  accentColor = '#1d4ed8',
   position = 'bottom-right',
   title = 'Chat with us',
   placeholder = 'Type your message...'
@@ -107,7 +106,7 @@ const Chatbot: React.FC<ChatbotProps> = ({
               if (json.type === 'item' && json.content) {
                 content += json.content;
               }
-            } catch (e) {
+            } catch {
               console.log('Failed to parse JSON line:', line);
             }
           });
@@ -254,9 +253,6 @@ const Chatbot: React.FC<ChatbotProps> = ({
                 onKeyPress={handleKeyPress}
                 placeholder={placeholder}
                 className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 text-sm"
-                style={{ 
-                  focusRingColor: primaryColor + '80' 
-                }}
                 disabled={isLoading}
               />
               <button

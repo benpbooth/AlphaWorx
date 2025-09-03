@@ -44,7 +44,7 @@ export default function LoginPage() {
       } else {
         setError(data.error);
       }
-    } catch (err) {
+    } catch {
       setError('Something went wrong. Please try again.');
     } finally {
       setIsLoading(false);

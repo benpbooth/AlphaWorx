@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send, Clock } from "lucide-react";
 
-interface ContactProps {
-  companyName: string;
-}
-
-const Contact: React.FC<ContactProps> = ({ companyName }) => {
+const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');

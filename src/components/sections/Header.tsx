@@ -2,11 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-interface HeaderProps {
-  ctaText: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ ctaText }) => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement | null>(null);
   

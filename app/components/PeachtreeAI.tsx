@@ -12,24 +12,20 @@ import Footer from "./sections/Footer";
 
 interface AIBusinessWebsiteProps {
   companyName?: string;
-  primaryColor?: string;
-  accentColor?: string;
   ctaText?: string;
 }
 
 const PeachtreeAI: React.FC<AIBusinessWebsiteProps> = ({
       companyName = "A3 Solutions",
-  primaryColor = "#407bff",
-  accentColor = "#407bff",
   ctaText = "Login"
 }) => {
   return (
     <div className="font-sans text-gray-800">
-      <Header ctaText={ctaText} />
+      <Header />
       <Hero ctaText={ctaText} />
       <Services />
-      <About companyName={companyName} />
-      <Contact companyName={companyName} />
+      <About />
+      <Contact />
       <Footer companyName={companyName} />
       
       {/* Chatbot temporarily disabled */}

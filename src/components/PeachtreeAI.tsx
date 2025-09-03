@@ -17,13 +17,11 @@ interface AIBusinessWebsiteProps {
 
 const PeachtreeAI: React.FC<AIBusinessWebsiteProps> = ({
   companyName = "Peachtree.AI",
-  primaryColor = "#000000",
-  accentColor = "#000000",
   ctaText = "Login"
 }) => {
   return (
     <div className="font-sans text-gray-800">
-      <Header ctaText={ctaText} />
+      <Header />
       <Hero ctaText={ctaText} />
       <Services />
       <About companyName={companyName} />

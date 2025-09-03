@@ -5,7 +5,7 @@ interface ImageWithFallbackProps {
   alt: string;
   style?: React.CSSProperties;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export const ImageWithFallback: React.FC<ImageWithFallbackProps> = (props) => {

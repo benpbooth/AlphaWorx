@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Clock } from "lucide-react";
 
-interface AboutProps {
-  companyName: string;
-}
-
-const About: React.FC<AboutProps> = ({ companyName }) => {
+const About: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
   const [autoPlayIndex, setAutoPlayIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -217,9 +213,11 @@ const About: React.FC<AboutProps> = ({ companyName }) => {
                   y: isActive ? -10 : 0,
                   rotateY: isActive ? 5 : 0
                 }}
-                transition={{
-                  duration: 0.4,
-                  ease: "easeOut"
+                whileHover={{
+                  transition: {
+                    duration: 0.4,
+                    ease: "easeOut"
+                  }
                 }}
                 onHoverStart={() => handleCardInteraction(index, true)}
                 onHoverEnd={() => handleCardInteraction(index, false)}

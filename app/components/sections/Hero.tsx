@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import ClientLogo from "../ui/ClientLogos";
 import LiveChatDemo from "../ui/LiveChatDemo";
@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = () => {
   const [typewriterText, setTypewriterText] = useState("");
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   
-  const words = ["Forward-Thinking Organizations", "Growing Businesses", "Busy Practices", "Small Teams", "Peace of Mind"];
+  const words = useMemo(() => ["Forward-Thinking Organizations", "Growing Businesses", "Busy Practices", "Small Teams", "Peace of Mind"], []);
   const fullText = "AI Integration for ";
   
   useEffect(() => {
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = () => {
       if (typeInterval) clearInterval(typeInterval);
       if (timeoutId) clearTimeout(timeoutId);
     };
-  }, [currentWordIndex]);
+  }, [currentWordIndex, words]);
 
   const clientLogos = [
     {
@@ -157,8 +157,14 @@ const Hero: React.FC<HeroProps> = () => {
                     fontFamily: 'League Spartan, sans-serif',
                     backgroundColor: '#407bff'
                   }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#3366e6'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#407bff'}
+                  onMouseEnter={(e) => {
+                    const target = e.target as HTMLElement;
+                    target.style.backgroundColor = '#3366e6';
+                  }}
+                  onMouseLeave={(e) => {
+                    const target = e.target as HTMLElement;
+                    target.style.backgroundColor = '#407bff';
+                  }}
                 >
                   Try for free →
                 </motion.a>
@@ -173,12 +179,14 @@ const Hero: React.FC<HeroProps> = () => {
                     color: '#407bff'
                   }}
                   onMouseEnter={(e) => {
-                    e.target.style.backgroundColor = '#407bff';
-                    e.target.style.color = 'white';
+                    const target = e.target as HTMLElement;
+                    target.style.backgroundColor = '#407bff';
+                    target.style.color = 'white';
                   }}
                   onMouseLeave={(e) => {
-                    e.target.style.backgroundColor = 'transparent';
-                    e.target.style.color = '#407bff';
+                    const target = e.target as HTMLElement;
+                    target.style.backgroundColor = 'transparent';
+                    target.style.color = '#407bff';
                   }}
                 >
                   Book a demo →
