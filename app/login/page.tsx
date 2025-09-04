@@ -158,15 +158,12 @@ export default function LoginPage() {
               transition={{ duration: 0.2 }}
               className="mb-6"
             >
-              <div className="flex items-center justify-center space-x-3 mb-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">A</span>
-                </div>
-                <h1 className="text-4xl font-semibold text-gray-900" style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.02em' }}>
-                  AlphaWorx
+              <div className="mb-6 text-center">
+                <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mb-3" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                  AgentEva
                 </h1>
+                <p className="text-sm text-gray-500 font-medium">Next-generation AI agents for your business</p>
               </div>
-              <p className="text-sm text-gray-500 font-medium">AI-powered business automation</p>
             </motion.div>
           </motion.div>
 

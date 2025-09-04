@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AlphaWorx - AI Business Automation Platform',
-  description: 'Streamline your business with intelligent AI automation. Scale faster, work smarter.',
+  title: 'AgentEva - AI Agent Platform',
+  description: 'Deploy intelligent AI agents that work 24/7 for your business. Automate customer service, sales, and operations.',
 }
 
 export default function RootLayout({

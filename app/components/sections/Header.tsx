@@ -33,16 +33,10 @@ const Header: React.FC = () => {
                                       <div className="flex items-center space-x-2">
                      {/* Clean text-only SaaS logo */}
                      <div className="flex items-center relative group">
-                        <div className="flex items-center space-x-2">
-                          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-sm">A</span>
-                          </div>
-                          <span
-                            className="text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
-                            style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.02em' }}
-                          >
-                            AlphaWorx
-                          </span>
+                        <div className="flex items-center">
+                          <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                            AgentEva
+                          </h1>
                         </div>
                        </div>
                    </div>

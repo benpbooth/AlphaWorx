@@ -32,13 +32,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="relative group">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
-                  <span className="text-white font-bold text-lg">A</span>
-                </div>
-                <div className="text-3xl font-semibold text-gray-900 hover:text-blue-600 transition-colors" style={{ fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
-                  AlphaWorx
-                </div>
+              <div className="flex items-center">
+                <h1 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent hover:from-blue-400 hover:via-purple-500 hover:to-pink-600 transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  AgentEva
+                </h1>
               </div>
             </div>
           </div>
