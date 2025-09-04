@@ -1,4 +1,4 @@
-# Peach3.AI Setup Instructions
+# AgentEva Setup Instructions
 
 ## Environment Variables
 

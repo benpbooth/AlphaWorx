@@ -3,6 +3,6 @@
   "/api/auth/login/route": "/api/auth/login",
   "/api/auth/create/route": "/api/auth/create",
   "/dashboard/[username]/page": "/dashboard/[username]",
-  "/page": "/",
-  "/login/page": "/login"
+  "/login/page": "/login",
+  "/page": "/"
 }

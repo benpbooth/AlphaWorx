@@ -3,6 +3,6 @@
   "/api/auth/login/route": "app/api/auth/login/route.js",
   "/api/auth/create/route": "app/api/auth/create/route.js",
   "/dashboard/[username]/page": "app/dashboard/[username]/page.js",
-  "/page": "app/page.js",
-  "/login/page": "app/login/page.js"
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
 }
