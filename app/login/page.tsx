@@ -159,9 +159,64 @@ export default function LoginPage() {
               className="mb-6"
             >
               <div className="mb-6 text-center">
-                <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mb-3" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
-                  AgentEva
-                </h1>
+                <div className="flex items-center justify-center mb-4">
+                  {/* Female AI Agent Icon - Larger for login page */}
+                  <motion.div
+                    className="relative mr-4"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <svg width="60" height="60" viewBox="0 0 40 40" className="drop-shadow-lg">
+                      <defs>
+                        <linearGradient id="agentGradientLogin" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#06B6D4" />
+                          <stop offset="50%" stopColor="#3B82F6" />
+                          <stop offset="100%" stopColor="#8B5CF6" />
+                        </linearGradient>
+                        <linearGradient id="hairGradientLogin" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#4F46E5" />
+                          <stop offset="100%" stopColor="#7C3AED" />
+                        </linearGradient>
+                      </defs>
+                      
+                      {/* Head circle */}
+                      <circle cx="20" cy="16" r="8" fill="url(#agentGradientLogin)" opacity="0.9"/>
+                      
+                      {/* Hair/headset */}
+                      <path d="M12 12 C12 8, 16 6, 20 6 C24 6, 28 8, 28 12 L28 14 C28 10, 24 8, 20 8 C16 8, 12 10, 12 14 Z" fill="url(#hairGradientLogin)"/>
+                      
+                      {/* Eyes */}
+                      <circle cx="17" cy="15" r="1.5" fill="white"/>
+                      <circle cx="23" cy="15" r="1.5" fill="white"/>
+                      <circle cx="17" cy="15" r="0.8" fill="#1E40AF"/>
+                      <circle cx="23" cy="15" r="0.8" fill="#1E40AF"/>
+                      
+                      {/* Nose */}
+                      <ellipse cx="20" cy="17.5" rx="0.8" ry="1.2" fill="white" opacity="0.6"/>
+                      
+                      {/* Smile */}
+                      <path d="M18 19 Q20 21 22 19" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                      
+                      {/* Body/shoulders */}
+                      <ellipse cx="20" cy="32" rx="12" ry="6" fill="url(#agentGradientLogin)" opacity="0.8"/>
+                      
+                      {/* Tech elements */}
+                      <circle cx="32" cy="12" r="2" fill="#10B981" opacity="0.7">
+                        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="8" cy="18" r="1.5" fill="#F59E0B" opacity="0.7">
+                        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="30" cy="25" r="1" fill="#EF4444" opacity="0.7">
+                        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+                      </circle>
+                    </svg>
+                  </motion.div>
+                  
+                  <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                    AgentEva
+                  </h1>
+                </div>
                 <p className="text-sm text-gray-500 font-medium">Next-generation AI agents for your business</p>
               </div>
             </motion.div>
