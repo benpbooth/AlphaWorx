@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
+import ClientLogo from "../ui/ClientLogos";
 import LiveChatDemo from "../ui/LiveChatDemo";
 
 interface HeroProps {
@@ -44,6 +45,45 @@ const Hero: React.FC<HeroProps> = () => {
       if (timeoutId) clearTimeout(timeoutId);
     };
   }, [currentWordIndex, words]);
+
+  const clientLogos = [
+    {
+      id: 2,
+      name: "United Networks of America"
+    },
+    {
+      id: 3,
+      name: "Georgia Drug Card"
+    },
+    {
+      id: 4,
+      name: "Alabama Rx Card"
+    },
+    {
+      id: 5,
+      name: "Texas Drug Card"
+    },
+    {
+      id: 6,
+      name: "California Rx Card"
+    },
+    {
+      id: 7,
+      name: "Louisiana Drug Card"
+    },
+    {
+      id: 8,
+      name: "South Carolina Drug Card"
+    },
+    {
+      id: 9,
+      name: "Smallcakes Cupcakery"
+    },
+    {
+      id: 10,
+      name: "Florida Rx Card"
+    }
+  ];
 
 
 
@@ -170,6 +210,38 @@ const Hero: React.FC<HeroProps> = () => {
         </div>
       </div>
 
+                   {/* Client Logos Carousel */}
+             <div className="relative z-10 py-6 bg-gray-800 mt-15">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-4">
+            <p className="text-xs text-gray-300 font-medium" style={{ fontFamily: 'League Spartan, sans-serif' }}>
+              Trusted by leading organizations
+            </p>
+          </div>
+          <div className="relative max-w-full mx-auto overflow-hidden">
+            <motion.div
+              className="flex items-center space-x-12 whitespace-nowrap"
+              animate={{ x: ['0%', '-50%'] }}
+              transition={{ 
+                repeat: Infinity, 
+                duration: 120, 
+                ease: 'linear',
+                repeatDelay: 0
+              }}
+              style={{ width: 'max-content' }}
+            >
+              {[...clientLogos, ...clientLogos, ...clientLogos].map((logo, idx) => (
+                <div 
+                  key={`${logo.id}-${idx}`} 
+                  className="flex items-center justify-center h-8 min-w-[100px] flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity"
+                >
+                  <ClientLogo name={logo.name} />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
