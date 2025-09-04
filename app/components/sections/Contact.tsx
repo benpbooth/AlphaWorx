@@ -29,12 +29,12 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      info: "info@alphaworxsystems.com"
+      info: "info@agenteva.ai"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Office",
-      info: "2620 Milford Lane\nAlpharetta, GA 30009"
+      info: "3636 S Sherwood Forest Blvd\nBaton Rouge, LA 70816"
     }
   ];
 
@@ -381,7 +381,7 @@ const Contact: React.FC = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-gray-900 bg-white"
                         style={{ fontFamily: 'Inter, sans-serif' }}
-                        placeholder="your@alphaworxsystems.com"
+                        placeholder="your@agenteva.ai"
                         required
                         whileFocus={{ scale: 1.02 }}
                         transition={{ duration: 0.2 }}

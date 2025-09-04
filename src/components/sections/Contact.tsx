@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p>info@alphaworxsystems.com</p>
+                    <p>info@agenteva.ai</p>
                   </div>
                 </div>
                 
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                       type="email" 
                       id="email" 
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring focus:ring-gray-200 focus:ring-opacity-50 transition-colors" 
-                      placeholder="your@alphaworxsystems.com" 
+                      placeholder="your@agenteva.ai" 
                       required 
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
